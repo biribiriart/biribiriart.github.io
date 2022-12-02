@@ -1,0 +1,593 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: monarcha, Garamond, "Times New Roman", cursive;
+}
+
+h1
+{
+	font-size: 60px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+h2
+{
+	font-size: 30px;
+	text-align: center;
+}
+
+h3
+{
+	text-align: center;
+}
+
+/* Default Style: Typeface, margins, etc. */
+
+body
+{	
+	font-family: highgate, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+}
+
+.wrapper
+{
+	/*Setting the boxes width*/
+	
+	width: 1400px;
+	
+	/*Put the box center within the browser*/
+	
+	margin-left: auto;
+	margin-right: auto;
+	background: black;
+	/*This establishing that wrapper can use grid propery*/
+	display: grid;
+	
+}
+
+header, main, footer
+{
+	display: grid;
+	grid-column: col 1 / span 12;
+	/*Establish grid characteristic*/
+	grid-template-columns: repeat(12, [col] 107.5px);
+	/*Add a consistent gutter/gap between the columns*/
+	grid-gap: 10px;
+}
+
+nav
+{
+	grid-row: 2; 
+	grid-column: 1 / span 12;
+	text-align: center; 
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*Main Navigation Start*/
+
+ul.main-navigation
+{
+	list-style-type: none;
+	background-color: #67fbf1;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 20px;
+}
+
+ul.main-navigation li
+{
+	display: inline-block;
+	text-align: center;
+}
+
+ul.main-navigation li a
+{
+	display: inline-block;
+	text-decoration: none;
+	padding-left: 45px;
+	padding-right: 45px;
+	color: black; 
+}
+
+ul.main-navigation li a:hover
+{
+	color: #65004C;
+}
+
+ul.main-navigation li.active a 
+{
+	color: black;
+	font-weight: 1000;
+}
+
+
+a.button
+{
+	color: white;
+	background-color: #45a29e;
+	padding: 10px 30px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center; 
+	list-style-type: none; 
+	
+}
+
+.allrightsreserved
+{
+	background-color: #67fbf1;
+	text-align: center;
+	color: black;
+	font-size: 14px; 
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*Main Navigation End*/
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.homepage-welcome
+{
+	grid-column: col 1 / span 12;
+	grid-row: 2;
+	display: inline-block;  
+	color: white; 
+	text-align: center; 
+}
+
+.homepage-3d-modeling
+{
+	grid-column: col 1 / span 12;
+	grid-row: 3;
+}
+
+.homepage-illustrations
+{
+	grid-column: col 1 / span 12;
+	grid-row: 4;
+}
+
+.homepage-ux
+{
+	grid-column: col 1 / span 12;
+	grid-row: 5;
+}
+
+.homepage-videogames
+{
+	grid-column: col 1 / span 12;
+	grid-row: 6;
+}
+.back-to-top-button
+{
+	grid-column: col 11 / span 2;
+	grid-row: 12;
+}
+
+.illustrations-text
+{
+	grid-column: col 1 / span 12;
+	grid-row: 2;
+	display: inline-block;  
+	color: white; 
+	text-align: center; 
+}
+
+.illustrations-firstimage
+{
+	grid-row: 3;
+	height: 100%;
+	width: 1400px;
+}
+
+.illustration-secondimage
+{
+	grid-row: 4;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-thirdimage
+{
+	grid-row: 4;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-fourthimage
+{
+	grid-row: 5;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-fifthimage
+{
+	grid-row: 5;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-sixthimage
+{
+	grid-row: 6;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-seventhimage
+{
+	grid-row: 6;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-eightimage
+{
+	grid-row: 7;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-ninthimage
+{
+	grid-row: 7;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-tenthimage
+{
+	grid-row: 8;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-eleventhimage
+{
+	grid-row: 8;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-twelveimage
+{
+	grid-row: 9;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-thirthteenthimage
+{
+	grid-row: 9;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 600px;
+}
+
+.illustration-fourthteenthimage
+{
+	grid-row: 10;
+	grid-column: col 4 / span 6;
+	height: 100%;
+	width: 700px;
+}
+
+
+.modelingtext
+{
+	grid-column: col 1 / span 12;
+	grid-row: 2;
+	display: inline-block;  
+	color: white; 
+	text-align: center; 
+}
+
+.modelingfirstimage
+{
+	grid-row: 3;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingsecondimage
+{
+	grid-row: 3;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingthirdimage
+{
+	grid-row: 4;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingfourthimage
+{
+	grid-row: 4;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingfifthimage
+{
+	grid-row: 5;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingsixthimage
+{
+	grid-row: 5;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingseventhimage
+{
+	grid-row: 6;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingeightimage
+{
+	grid-row: 6;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingninthimage
+{
+	grid-row: 7;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingtenthimage
+{
+	grid-row: 7;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingeleventhimage
+{
+	grid-row: 8;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingtwelfthimage
+{
+	grid-row: 8;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingthirthteenthimage
+{
+	grid-row: 9;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.modelingfourthteenthimage
+{
+	grid-row: 9;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.uximageone
+{
+	grid-row: 3;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.uximagetwo
+{
+	grid-row: 3;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.uximagethree
+{
+	grid-row: 4;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.uximagefour
+{
+	grid-row: 4;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.uximagefive
+{
+	grid-row: 5;
+	grid-column: col 2 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+.uximagesix
+{
+	grid-row: 5;
+	grid-column: col 7 / span 6;
+	height: 100%;
+	width: 550px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*Footer start here*/
+.footerdiv
+{
+	grid-column: col 1 / span 12;
+	grid-row: 2;
+}
+
+.footerlogo
+{
+	grid-column: col 12 / span 1;
+	grid-row: 1;
+}
+
+
+ul.main-footer
+{
+	list-style-type: none;
+	background-color: none;
+	margin: 0;
+	padding: 0;
+	text-align: center; 
+}
+
+ul.main-footer li
+{
+	display: inline-block;
+	text-align: center;
+}
+
+ul.main-footer li a
+{
+	display: inline-block;
+	text-decoration: none;
+	
+}
+
+ul.main-footer li a:hover
+{
+	color: #65004C;
+}
+
+ul.main-footer li.active a 
+{
+	color: #2017E8;
+	text-decoration: underline; 
+}
+
+/*Footer end here*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*Style for navigation*/
+
+ul.main-nav
+{
+	list-style-type: none;
+	background-color: pink; 
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+}
+
+/*put the items in the list in a row/horizontally and align the text centered*/
+ul.main-nav li
+{
+	display: inline-block;
+	text-align: center;
+}
+
+/*set a width of the link, remove the underline of the link, set type color, add space above and belowthe text link*/
+ul.main-nav li a
+{
+	display: inline-block;
+	width: 100px;
+	text-decoration: none;
+	color: #286A00;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+/*Change the text color when you roll over the link*/
+
+ul.main-nav li a:hover
+{
+	color: #65004C;
+}
+
+/*Set a visual indicator of what page the user is currently on by changing the text color and adding in underline*/
+
+ul.main-nav li.active a 
+{
+	color: #2017E8;
+	text-decoration: underline; 
+}
+
+
+/*End navigation style*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
